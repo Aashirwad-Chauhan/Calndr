@@ -27,10 +27,9 @@ const AppLayout = ({children}) => {
                 <nav className="mt-8">
                     <ul>
                         {
-                            navItems.map((item, index) => (
-                                <li>
+                            navItems.map((item) => (
+                                <li key={item.href}>   
                                     <Link 
-                                        key={index} 
                                         href={item.href}
                                         className={`flex items-center px-4 py-4 text-gray-700 hover:bg-gray-200
                                             ${usedPath === item.href ? "bg-green-100" : "" }`}
@@ -58,10 +57,9 @@ const AppLayout = ({children}) => {
             <nav className="md:hidden fixed bottom-0 left-0 bg-white shadow-md">
                 <ul className="flex justify-around">
                     {
-                        navItems.map((item, index) => (
-                            <li>
+                        navItems.map((item) => (
+                            <li key={item.href} >
                                 <Link 
-                                    key={index} 
                                     href={item.href}
                                     className={`flex flex-col items-center py-2 px-4
                                         ${usedPath === item.href ? "text-green-600" : "text-gray-600" }`}

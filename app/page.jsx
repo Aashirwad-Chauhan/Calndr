@@ -12,12 +12,12 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12 mb-24">
         <div className="lg:w-1/2">
           <h1 className="text-7xl font-extrabold pb-6 gradient-title">
-            Your Meetings, 
-            Your Time,      
+            Your Meetings. 
+            Your Time.  
             Simplified.
           </h1>
           <p className="text-lg text-gray-600 mb-10">
-            Whether it's private sessions or public meetings, we make every appointment a breeze.
+            Whether it&apos;s private sessions or public meetings, we make every appointment a breeze.
           </p>
 
           <Link href='/dashboard'>
